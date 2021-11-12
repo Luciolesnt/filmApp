@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 60%;
+  margin: auto;
+}
+
+app-room-card {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

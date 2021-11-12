@@ -21,7 +21,7 @@ export class FilmComponent implements OnInit {
 
     // Récupérer une liste de 250 films
     this.filmService.getFilms()
-    .subscribe((films) => {
+    .subscribe((films: Film[]) => {
       this.films = films;
     })
 

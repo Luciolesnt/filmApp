@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,9 @@ import { RoomComponent } from './room/room.component';
 import { ClientComponent } from './client/client.component';
 import { NotFoundComponent } from './shared/component/not-found/not-found.component';
 import { FilmCardComponent } from './film/film-card/film-card.component';
+import { ClientCardComponent } from './client/client-card/client-card.component';
+import { ClientCreateComponent } from './client/client-create/client-create.component';
+import { RoomCardComponent } from './room/room-card/room-card.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,17 @@ import { FilmCardComponent } from './film/film-card/film-card.component';
     RoomComponent,
     ClientComponent,
     NotFoundComponent,
-    FilmCardComponent
+    FilmCardComponent,
+    ClientCardComponent,
+    ClientCreateComponent,
+    RoomCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

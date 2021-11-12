@@ -1,1 +1,3 @@
-<p>room works!</p>
+<div>
+    <app-room-card [room]="room" *ngFor="let room of rooms" (deleteEmitter)="refreshRooms()"></app-room-card>
+</div>  

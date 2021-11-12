@@ -6,11 +6,17 @@ import { FilmComponent } from './film/film.component';
 import { NotFoundComponent } from './shared/component/not-found/not-found.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { RoomComponent } from './room/room.component';
+import { ClientCreateComponent } from './client/client-create/client-create.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "film", pathMatch: "full" },
   { path: "film", component: FilmComponent },
-  { path: "client", component: ClientComponent },
+  { 
+    path: "client", 
+    children: [
+      {path: "", component: ClientComponent, pathMatch: "full"},
+      { path: "new", component: ClientCreateComponent, pathMatch: "full" },
+    ] },
   { path: "room", component: RoomComponent },
   { path: "reservation", component: ReservationComponent },
     // WildCards
