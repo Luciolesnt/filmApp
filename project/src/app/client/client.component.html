@@ -1,1 +1,4 @@
-<p>YOOOOOOOOOOOOOOO</p>
+<div>
+    <button [routerLink]="['new']">Ajouter un client</button>
+    <app-client-card [client]="client" *ngFor="let client of clients"></app-client-card>
+</div> 
