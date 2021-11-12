@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+app-film-card {
+  color: white;
+  max-width: 30%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(107, 59, 67);
+  margin-bottom: 10px;
+  border-radius: 20px;
+}

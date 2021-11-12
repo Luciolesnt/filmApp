@@ -10,6 +10,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { RoomComponent } from './room/room.component';
 import { ClientComponent } from './client/client.component';
 import { NotFoundComponent } from './shared/component/not-found/not-found.component';
+import { FilmCardComponent } from './film/film-card/film-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotFoundComponent } from './shared/component/not-found/not-found.compon
     ReservationComponent,
     RoomComponent,
     ClientComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FilmCardComponent
   ],
   imports: [
     BrowserModule,
